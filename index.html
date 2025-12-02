@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Documentation - User Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="public/logo.png" alt="Uniqube 3D Logo" class="logo-image">
+                    <div class="logo-text">
+                        <h1 class="logo-title">Uniqube 3D</h1>
+                        <span class="logo-subtitle">Documentation</span>
+                    </div>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <nav class="nav">
+                <div class="nav-section">
+                    <h3 class="nav-title">Getting Started</h3>
+                    <ul class="nav-list">
+                        <li><a href="#introduction" class="nav-link active">Introduction</a></li>
+                        <li><a href="#login" class="nav-link">How to Login</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-title">Landing</h3>
+                    <ul class="nav-list">
+                        <li><a href="#overview" class="nav-link">Overview</a></li>
+                        <li><a href="#project-dashboard" class="nav-link">Project Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-title">Panel Management</h3>
+                    <ul class="nav-list">
+                        <li><a href="#status-grouping" class="nav-link">Status & Grouping</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-title">Viewer Engine</h3>
+                    <ul class="nav-list">
+                        <li><a href="#Viewer" class="nav-link">3D Viewer</a></li>
+                        <li><a href="#TreeViewer" class="nav-link">Tree Viewer</a></li>
+                        <li><a href="#SelectionMode" class="nav-link">Selection Mode</a></li>
+                        <li><a href="#two" class="nav-link">2D Viewer</a></li>
+                        <li><a href="#panel-status" class="nav-link">View Panel Status</a></li>
+                        <li><a href="#grouped-panels" class="nav-link">View Grouped Panels</a></li>
+                        <li><a href="#filter-panels" class="nav-link">Filter Panels</a></li>
+                        <li><a href="#QRCode" class="nav-link">QR Code</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="content-wrapper">
+                <!-- Section 1: Introduction -->
+                <section id="introduction" class="doc-section">
+                    <h1 class="section-title">Welcome to Uniqube 3D</h1>
+                    <p class="section-description">
+                        A comprehensive BIM (Building Information Modeling) platform for modern construction project management.
+                    </p>
+
+                    <div class="intro-hero">
+                        <div class="intro-content">
+                            <h2 class="intro-subtitle">What is Uniqube 3D?</h2>
+                            <p class="intro-text">
+                                Uniqube 3D is an advanced construction management platform that revolutionizes how building projects are planned, tracked, and executed.
+                                By combining 3D visualization with intelligent panel management, we help construction teams work smarter, faster, and more efficiently.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefits-section">
+                        <h2 class="subsection-title">Key Benefits</h2>
+                        <div class="feature-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">🎯</div>
+                                <h3>Precision Management</h3>
+                                <p>Track every panel, component, and construction element with pinpoint accuracy through our intuitive 3D viewer and status management system.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">⏱️</div>
+                                <h3>Time Savings</h3>
+                                <p>Reduce project delays by up to 40% with real-time progress tracking, automated status updates, and instant visibility into project bottlenecks.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">💰</div>
+                                <h3>Cost Reduction</h3>
+                                <p>Minimize waste and rework by identifying issues early. Our clients report average cost savings of 15-25% per project through better coordination.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">🤝</div>
+                                <h3>Team Collaboration</h3>
+                                <p>Unite architects, engineers, contractors, and stakeholders on a single platform with real-time updates and seamless communication.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">📊</div>
+                                <h3>Data-Driven Decisions</h3>
+                                <p>Make informed choices backed by comprehensive analytics, progress reports, and visual insights into every aspect of your project.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">🌍</div>
+                                <h3>Remote Access</h3>
+                                <p>Access your projects from anywhere, anytime. Perfect for distributed teams and on-site inspections with mobile-friendly interfaces.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="economic-impact">
+                        <h2 class="subsection-title">Economic Impact</h2>
+                        <div class="impact-grid">
+                            <div class="impact-card">
+                                <div class="impact-stat">40%</div>
+                                <div class="impact-label">Faster Project Delivery</div>
+                                <p>Complete projects ahead of schedule with streamlined workflows and better coordination.</p>
+                            </div>
+
+                            <div class="impact-card">
+                                <div class="impact-stat">25%</div>
+                                <div class="impact-label">Cost Reduction</div>
+                                <p>Lower expenses through reduced rework, optimized resource allocation, and waste minimization.</p>
+                            </div>
+
+                            <div class="impact-card">
+                                <div class="impact-stat">60%</div>
+                                <div class="impact-label">Error Reduction</div>
+                                <p>Minimize costly mistakes with visual verification, clash detection, and real-time status tracking.</p>
+                            </div>
+
+                            <div class="impact-card">
+                                <div class="impact-stat">3x</div>
+                                <div class="impact-label">ROI Within 12 Months</div>
+                                <p>See substantial returns through efficiency gains, reduced delays, and improved project outcomes.</p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="how-it-helps">
+                        <h2 class="subsection-title">How Uniqube 3D Helps You</h2>
+                        <div class="help-list">
+                            <div class="help-item">
+                                <div class="help-icon">🏗️</div>
+                                <div class="help-content">
+                                    <h3>For Project Managers</h3>
+                                    <p>Get a bird's-eye view of project progress, identify bottlenecks instantly, and make data-driven decisions with comprehensive dashboards and real-time analytics.</p>
+                                </div>
+                            </div>
+
+                            <div class="help-item">
+                                <div class="help-icon">👷</div>
+                                <div class="help-content">
+                                    <h3>For Construction Teams</h3>
+                                    <p>Access panel information on-site with QR codes, update status in real-time, and eliminate confusion with clear visual references and up-to-date documentation.</p>
+                                </div>
+                            </div>
+
+                            <div class="help-item">
+                                <div class="help-icon">📐</div>
+                                <div class="help-content">
+                                    <h3>For Engineers & Architects</h3>
+                                    <p>Visualize designs in 3D, track implementation accuracy, and ensure construction aligns with plans through detailed model views and comparison tools.</p>
+                                </div>
+                            </div>
+
+                            <div class="help-item">
+                                <div class="help-icon">💼</div>
+                                <div class="help-content">
+                                    <h3>For Stakeholders</h3>
+                                    <p>Monitor project progress transparently, receive automated updates, and access professional reports that demonstrate value and progress at every stage.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tip-box">
+                        <strong>Ready to get started?</strong> Follow the navigation menu to learn how to log in, navigate your projects, and leverage all the powerful features Uniqube 3D has to offer.
+                    </div>
+                </section>
+
+                <!-- Section 2: How to Login -->
+                <section id="login" class="doc-section">
+                    <h1 class="section-title">How to Login</h1>
+                    <p class="section-description">
+                      Get your login credentials from the project administrator.
+                    </p>
+
+                    <!-- <div class="video-container">
+                        <video controls style="width: 100%; border-radius: 8px;">
+                            <source src="public/dash.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="text-align: center; margin-top: 10px; color: #666;">Video Tutorial: Login Process</p>
+                    </div> -->
+
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Navigate to Login Page</h3>
+                                <p>Open your web browser and navigate to the application URL. You will be automatically redirected to the login page if you're not already logged in.</p>
+                                <div class="image-placeholder">
+                                    <img src="public/login.png" alt="Screenshot: Login Page" style="width: 100%; border-radius: 8px;">
+                                    <p style="text-align: center; margin-top: 10px; color: #666;">Login Page</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Enter Your Credentials</h3>
+                                <p>Enter your registered email address and password in the respective fields. Make sure your credentials are correct to avoid login errors.</p>
+                                <div class="image-placeholder">
+                                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                        <polyline points="21 15 16 10 5 21"></polyline>
+                                    </svg>
+                                    <p>Screenshot: Credential Input</p>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Click Login Button</h3>
+                                <p>Once you've entered your credentials, click the "Login" button. You will be authenticated and redirected to the dashboard.</p>
+                                <div class="tip-box">
+                                    <strong>Tip:</strong> you need to get credentials from your project administrator.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 2: Dashboard Information -->
+                <section id="overview" class="doc-section">
+                    <h1 class="section-title">Project Overview</h1>
+                    <p class="section-description">
+                        The landing page provides a comprehensive overview project assigned for you and its progress.
+                    </p>
+
+                <div class="step">
+                         
+                            <div class="step-content">
+                                <div class="image-placeholder">
+                                    <img src="public/dash.png" alt="Screenshot: Login Page" style="width: 100%; border-radius: 8px;">
+                                    <p style="text-align: center; margin-top: 10px; color: #666;">Overview Page</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="feature-grid">
+                        <!-- <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>Project Statistics</h3>
+                            <p>View total panels, completion status, and project progress at a glance.</p>
+                            <div class="image-placeholder small">
+                                <img src="public/login.png" alt="Project Statistics" style="width: 100%; border-radius: 8px;">
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">📈</div>
+                            <h3>Activity Charts</h3>
+                            <p>Monitor panel status distribution and project timeline through interactive charts.</p>
+                            <div class="image-placeholder small">
+                                <img src="public/login.png" alt="Activity Charts" style="width: 100%; border-radius: 8px;">
+                            </div>
+                        </div> -->
+
+                        <div class="feature-card">
+                            <div class="feature-icon">🔔</div>
+                            <h3>Realtime Notifications</h3>
+                            <p>Stay updated with recent changes, alerts, and important notifications.</p>
+                            <div class="image-placeholder small">
+                                <img src="public/notification.png" alt="Recent Notifications" style="width: 100%; border-radius: 8px;">
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">🪪</div>
+                            <h3>Profile Page</h3>
+                            <p>Access your personal information and settings.</p>
+                            <div class="image-placeholder small">
+                                <img src="public/profile.png" alt="Profile Page" style="width: 100%; border-radius: 8px;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 3: Secondary Dash -->
+                <section id="project-dashboard" class="doc-section">
+                    <h1 class="section-title">Project Dashboard</h1>
+                    <p class="section-description">
+                        You can open a project by clicking view details button in the overview page,it will open the project dashboard.
+                        here you can see project progress, create and manage status & group, manage panels, view 3D model, and access project details page.
+                    </p>
+
+                    <div class="step">
+                            <div class="step-content">
+                                <div class="image-placeholder">
+                                    <img src="public/projectdash.png" alt="Project Dashboard" style="width: 100%; border-radius: 8px;">
+                                    <p style="text-align: center; margin-top: 10px; color: #666;">Project Dashboard View</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Project Progress tracker</h3>
+                                <p>You can see status and their percentage of Impact.</p>
+                                <div class="image-placeholder">
+                                    <img src="public/tracker.png" alt="Project Progress Tracker" style="width: 100%; border-radius: 8px;">
+                                    <p style="text-align: center; margin-top: 10px; color: #666;">Project Progress View</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Project Management</h3>
+                                <p>Here we having multiple tabs to create and manage various aspects of the project such as status, groups, panels, and more.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">📋</div>
+                            <h3>Status Management</h3>
+                            <p>Create and manage panels under a statuses ex: completed, pending, returned etc...</p>
+                            <div class="image-placeholder small">
+                                <img src="public/status.png" alt="Detailed Reports" style="width: 100%; border-radius: 8px;">
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">⚙️</div>
+                            <h3>Group Management</h3>
+                            <p>Manage and organize panels under a groups for better collaboration. ex: Team A, Team B, or Container 1, container 2 etc...</p>
+                            <div class="image-placeholder small">
+                                <img src="public/group.png" alt="Advanced Settings" style="width: 100%; border-radius: 8px;">
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>Panel Management</h3>
+                            <p>Here you can manage all your panels assign or remove status/group , view panel details etc.</p>
+                            <div class="image-placeholder small">
+                                <img src="public/panels.png" alt="Data Analytics" style="width: 100%; border-radius: 8px;">
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">🔧</div>
+                            <h3>Project details page</h3>
+                            <p>View and edit detailed information about your project including name, current status, and other relevant details.</p>
+                            <div class="image-placeholder small">
+                                <img src="public/details.png" alt="Custom Workflows" style="width: 100%; border-radius: 8px;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 4: Change Status and Grouping -->
+                <section id="status-grouping" class="doc-section">
+                    <div class="content-columns">
+                        <div class="column">
+                            <h2 class="subsection-title">Creating Panel Status</h2>
+                            <!-- <div class="steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h3>Select Panel</h3>
+                                        <p>Click on the panel you want to update in the 3D viewer or panel list.</p>
+                                    </div>
+                                </div>
+
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h3>Open Status Menu</h3>
+                                        <p>Click on the status dropdown in the panel properties sidebar.</p>
+                                    </div>
+                                </div>
+
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h3>Select New Status</h3>
+                                        <p>Choose from available statuses: Pending, In Progress, Completed, or On Hold.</p>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                                               <div class="video-container">
+                        <video controls style="width: 100%; border-radius: 8px;">
+                            <source src="public/status.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="text-align: center; margin-top: 10px; color: #666;">Video Tutorial: Creating Status</p>
+                    </div>
+                        </div>
+
+                        <div class="column">
+                            <h2 class="subsection-title">Creating Groups</h2>
+                            <!-- <div class="steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h3>Select Multiple Panels</h3>
+                                        <p>Hold Ctrl/Cmd and click on panels to select multiple items.</p>
+                                    </div>
+                                </div>
+
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h3>Create Group</h3>
+                                        <p>Right-click and select "Create Group" or use the group button in the toolbar.</p>
+                                    </div>
+                                </div>
+
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h3>Name Your Group</h3>
+                                        <p>Enter a meaningful name for your group and click "Save".</p>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                                              <div class="video-container">
+                        <video controls style="width: 100%; border-radius: 8px;">
+                            <source src="public/group.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="text-align: center; margin-top: 10px; color: #666;">Video Tutorial: Creating Group</p>
+                    </div>
+                        </div>
+                    </div>
+
+                      <h1 class="section-title">Assigning Status & Group to Panels</h1>
+                    <p class="section-description">
+                        Learn how to update panel status and organize panels into groups for better project management.
+                    </p>
+
+                    <div class="video-container">
+                        <video controls style="width: 100%; border-radius: 8px;">
+                            <source src="public/assigning.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="text-align: center; margin-top: 10px; color: #666;">Video Tutorial: Assigning status and grouping to panels</p>
+                    </div>
+                </section>
+
+                <!-- Section 4: 3D Viewer -->
+                <section id="Viewer" class="doc-section">
+                    <h1 class="section-title">3D Viewer</h1>
+                    <p class="section-description">
+                       click on open 3D viewer Button onproject dashboard to Navigate and interact with your 3D building model using our intuitive viewer interface.
+                    </p>
+
+                    <div class="video-container">
+                        <video controls style="width: 100%; border-radius: 8px;">
+                            <source src="public/scene.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="text-align: center; margin-top: 10px; color: #666;">Video Tutorial: Viewer Engine</p>
+                    </div>
+
+                    <div class="control-guide">
+                        <h2 class="subsection-title">Navigation Controls</h2>
+                        <div class="controls-grid">
+                            <div class="control-item">
+                                <div class="control-key">Left Mouse</div>
+                                <div class="control-desc">Rotate the camera around the model</div>
+                            </div>
+                            <div class="control-item">
+                                <div class="control-key">Right Mouse</div>
+                                <div class="control-desc">Pan the camera view</div>
+                            </div>
+                            <div class="control-item">
+                                <div class="control-key">Mouse Wheel</div>
+                                <div class="control-desc">Zoom in and out</div>
+                            </div>
+                            <!-- <div class="control-item">
+                                <div class="control-key">Double Click</div>
+                                <div class="control-desc">Focus on selected element</div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <!-- <div class="image-placeholder">
+                        <img src="public/login.png" alt="Screenshot: 3D Viewer Interface" style="width: 100%; border-radius: 8px;">
+                        <p style="text-align: center; margin-top: 10px; color: #666;">Screenshot: 3D Viewer Interface</p>
+                    </div> -->
+
+                    <div class="feature-list">
+                        <h2 class="subsection-title">Key Features</h2>
+                        <ul>
+                            <li><strong>Tree Viewer:</strong>view Model structure</li>
+                            <li><strong>Selection Mode:</strong> Click on any panel to select and view its properties</li>
+                            <li><strong>2D View:</strong> Switch to a 2D floor plan view </li>
+                            <li><strong>Hide/Show Elements:</strong> Toggle visibility of different building components</li>
+                            <li><strong>Status Button:</strong> View panels under different statuses</li>
+                            <li><strong>Group Button:</strong> View panels under different groups</li>
+                            <li><strong>Filter Panels:</strong> Filter panels based on MEP, Doors & Windows, Frames , Structures</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 5: View Panel Status -->
+                <section id="TreeViewer" class="doc-section">
+                    <h1 class="section-title">Tree Viewer</h1>
+                    <p class="section-description">
+                        Explore the hierarchical structure of your 3D model and easily locate specific panels using the Tree Viewer.
+                    </p>
+
+                    <div class="video-container">
+                        <video controls style="width: 100%; border-radius: 8px;">
+                            <source src="public/TreeViewer.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="text-align: center; margin-top: 10px; color: #666;">Video Tutorial: Tree Viewer</p>
+                    </div>
+
+       
+                </section>
+                 <section id="SelectionMode" class="doc-section">
+                    <h1 class="section-title">Selection Mode</h1>
+                    <p class="section-description">
+                        Select and view detailed properties of individual panels within the 3D model using the Selection Mode.
+                    </p>
+
+                    <div class="video-container">
+                        <video controls style="width: 100%; border-radius: 8px;">
+                            <source src="public/selection.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="text-align: center; margin-top: 10px; color: #666;">Video Tutorial: Selection Mode</p>
+                    </div>
+
+       
+                </section>
+                <!-- Section 5: View Panel Status -->
+                <section id="two" class="doc-section">
+                    <h1 class="section-title">2D View</h1>
+                    <p class="section-description">
+                        Switch to a 2D floor plan view to get a different perspective of your building model.
+                    </p>
+
+                    <div class="video-container">
+                        <video controls style="width: 100%; border-radius: 8px;">
+                            <source src="public/2D.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="text-align: center; margin-top: 10px; color: #666;">Video Tutorial: 2D View</p>
+                    </div>
+
+                </section>
+                <!-- Section 5: View Panel Status -->
+                <section id="panel-status" class="doc-section">
+                    <h1 class="section-title">View Panel Status</h1>
+                    <p class="section-description">
+                        Monitor the status of individual panels and track progress across your entire project.
+                    </p>
+
+                    <div class="video-container">
+                        <video controls style="width: 100%; border-radius: 8px;">
+                            <source src="public/viewStatus.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="text-align: center; margin-top: 10px; color: #666;">Video Tutorial: Viewing Panel Status</p>
+                    </div>
+
+                    <div class="steps">
+                       
+
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>View Status Indicators</h3>
+                                <p>Each panel displays a color-coded status indicator:</p>
+                                <div class="status-indicators">
+                                    <div class="status-badge pending">Pending</div>
+                                    <div class="status-badge in-progress">In Progress</div>
+                                    <div class="status-badge completed">Completed</div>
+                                    <div class="status-badge on-hold">On Hold</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>View Detailed Information</h3>
+                                <p>Click on any panel to view detailed status information, including:</p>
+                                <ul>
+                                    <li>Current status and last updated date</li>
+                                    <!-- <li>Assigned team members</li>
+                                    <li>Completion percentage</li> -->
+                                    <li>Related notes and attachments</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 6: View Grouped Panels -->
+                <section id="grouped-panels" class="doc-section">
+                    <h1 class="section-title">View Grouped Panels</h1>
+                    <p class="section-description">
+                        Organize and view panels in groups for better project organization and management.
+                    </p>
+
+                    <div class="video-container">
+                        <video controls style="width: 100%; border-radius: 8px;">
+                            <source src="public/viewGroup.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="text-align: center; margin-top: 10px; color: #666;">Video Tutorial: Managing Grouped Panels</p>
+                    </div>
+
+                    <!-- <div class="content-columns">
+                        <div class="column">
+                            <h2 class="subsection-title">Accessing Groups</h2>
+                            <div class="image-placeholder">
+                                <img src="public/login.png" alt="Screenshot: Groups Panel" style="width: 100%; border-radius: 8px;">
+                                <p style="text-align: center; margin-top: 10px; color: #666;">Screenshot: Groups Panel</p>
+                            </div>
+                            <p>Navigate to the "Groups" section in the sidebar to view all your created panel groups. Groups are organized hierarchically for easy navigation.</p>
+                        </div>
+
+                        <div class="column">
+                            <h2 class="subsection-title">Group Operations</h2>
+                            <div class="feature-list">
+                                <ul>
+                                    <li><strong>Expand/Collapse:</strong> Click the arrow icon to show or hide group contents</li>
+                                    <li><strong>Highlight in 3D:</strong> Click the eye icon to highlight all panels in the group</li>
+                                    <li><strong>Edit Group:</strong> Right-click to rename, add, or remove panels</li>
+                                    <li><strong>Bulk Actions:</strong> Apply status changes to all panels in a group</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="tip-box">
+                        <strong>Tip:</strong> Use groups to organize panels by floor level, installation phase, or work zone for efficient project tracking.
+                    </div>
+                </section>
+
+                <!-- Section 7: Filter Panels -->
+                <section id="filter-panels" class="doc-section">
+                    <h1 class="section-title">Filter Panels</h1>
+                    <p class="section-description">
+                        Use advanced filtering options to quickly find and view specific panels based on different criteria.
+                    </p>
+
+                    <div class="video-container">
+                        <video controls style="width: 100%; border-radius: 8px;">
+                            <source src="public/Filters.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="text-align: center; margin-top: 10px; color: #666;">Video Tutorial: Filtering Panels</p>
+                    </div>
+
+                    <div class="filter-section">
+                        <h2 class="subsection-title">Filter by Category</h2>
+                        <div class="filter-grid">
+                            <div class="filter-card">
+                                <div class="filter-icon">🏗️</div>
+                                <h3>Frame Panels</h3>
+                                <p>Display only structural frame elements and load-bearing panels.</p>
+                                <!-- <div class="image-placeholder small">
+                                    <img src="public/login.png" alt="Frame Panels" style="width: 100%; border-radius: 8px;">
+                                </div> -->
+                                <!-- <button class="filter-button">Apply Filter</button> -->
+                            </div>
+
+                            <div class="filter-card">
+                                <div class="filter-icon">⚙️</div>
+                                <h3>MEP Systems</h3>
+                                <p>Show mechanical, electrical, and plumbing components and panels.</p>
+                                <!-- <div class="image-placeholder small">
+                                    <img src="public/login.png" alt="MEP Systems" style="width: 100%; border-radius: 8px;">
+                                </div>
+                                <button class="filter-button">Apply Filter</button> -->
+                            </div>
+
+                            <div class="filter-card">
+                                <div class="filter-icon">🪟</div>
+                                <h3>Doors & Windows</h3>
+                                <p>Filter to display all door and window panels and openings in the project.</p>
+                                <!-- <div class="image-placeholder small">
+                                    <img src="public/login.png" alt="Doors" style="width: 100%; border-radius: 8px;">
+                                </div>
+                                <button class="filter-button">Apply Filter</button> -->
+                            </div>
+
+                            <div class="filter-card">
+                                <div class="filter-icon">🏢</div>
+                                <h3>Structures</h3>
+                                <p>Display only structural panels</p>
+                                <!-- <div class="image-placeholder small">
+                                    <img src="public/login.png" alt="Windows" style="width: 100%; border-radius: 8px;">
+                                </div>
+                                <button class="filter-button">Apply Filter</button> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Open Filter Panel</h3>
+                                <p>Click the filter icon in the toolbar or press 'F' to open the filter panel.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Select Filter Criteria</h3>
+                                <p>Choose one or multiple filter criteria. You can combine filters for more specific results.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>View Filtered Results</h3>
+                                <p>The 3D viewer and panel list will update to show only panels matching your filter criteria. Click "Clear Filters" to reset.</p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="tip-box">
+                        <strong>Advanced Filtering:</strong> Combine multiple filters together. For example, filter for "Windows" + "In Progress" status to see all windows currently being installed.
+                    </div>
+                </section>
+
+                 <section id="QRCode" class="doc-section">
+                    <h1 class="section-title">QR Code</h1>
+                    <p class="section-description">
+                          Generate and scan QR codes for quick access to panel information on-site.
+                    </p>
+
+                    <div class="video-container">
+                        <video controls style="width: 100%; border-radius: 8px;">
+                            <source src="public/QR.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="text-align: center; margin-top: 10px; color: #666;">Video Tutorial: QR Code</p>
+                    </div>
+
+       
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Software Documentation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
